@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Container from "./Container";
 import Logo from "./Logo";
 import NavLinks from "./NavLinks";
@@ -23,8 +23,27 @@ const MobileNavLink = ({ children, ...props }) => {
 };
 
 const Header = () => {
+  const [isScrolled, setIsScrolled] = useState(false);
+  const handleScroll = () => {
+    const scrollY = window.scrollY;
+    setIsScrolled(scrollY > 50);
+  };
+
+  useEffect(() => {
+    if (typeof window !== "undefined") {
+      window.addEventListener("scroll", handleScroll);
+
+      // Clean up the scroll event listener when the component unmounts
+      return () => window.removeEventListener("scroll", handleScroll);
+    }
+  }, []);
+
   return (
-    <header>
+    <header
+      className={`w-full sticky top-0 z-50 bg-white  ${
+        isScrolled && "shadow-xl shadow-blue-100"
+      }`}
+    >
       <nav>
         <Container className="relative z-50 flex justify-between py-8">
           {/* Logo */}
