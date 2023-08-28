@@ -4,6 +4,8 @@ import Hero from "../components/Hero";
 import Footer from "../components/Footer";
 import Feature from "../components/Feature";
 import Account from "../components/Account";
+import CallToAction from "../components/CallToAction";
+// import Reviews from "../components/Reviews";
 
 export default function Home() {
   return (
@@ -17,6 +19,8 @@ export default function Home() {
       <Hero />
       <Feature />
       <Account />
+      <CallToAction />
+      {/* <Reviews /> */}
       <Footer />
     </div>
   );
