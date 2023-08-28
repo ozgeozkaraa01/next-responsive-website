@@ -133,7 +133,7 @@ const Chart = ({
             y1={points[activePointIndex].y}
             x2={totalWidth}
             y2={points[activePointIndex].y}
-            stroke="#06b6d4"
+            stroke="#0670d4"
             strokeDasharray="1 3"
           />
           <circle
@@ -142,7 +142,7 @@ const Chart = ({
             cy={points[activePointIndex].y}
             fill="#fff"
             strokeWidth="2"
-            stroke="#06b6d4"
+            stroke="#0670d4"
           />
         </>
       )}

@@ -20,11 +20,13 @@ const Hero = () => {
         <div className="lg:grid lg:grid-cols-12 lg:gap-x-8 lg:gap-y-20">
           {/* Right side */}
           <div className="relative z-10 mx-auto max-w-2xl lg:col-span-7 lg:max-w-none lg:pt-6 xl:col-span-6">
-            <Title title="Invest at the perfect time." className="text-4xl" />
+            <Title title="Lorem ipsum dolor sit amet." className="text-4xl" />
             <p className="mt-6 text-lg text-gray-600">
-              By leveraging insights from our network of industry insiders, you
-              will know exactly when to buy to maximize profit, and exactly when
-              to sell to avoid painful losses.
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+              Recusandae, deleniti. Ipsam assumenda perferendis earum quaerat,
+              possimus deserunt facilis velit alias! Eligendi officia neque
+              exercitationem consequatur nemo inventore. Blanditiis, magni
+              veniam.
             </p>
             <div className="mt-8 flex flex-wrap items-center gap-x-6 gap-4">
               <Image

@@ -42,12 +42,12 @@ const DesktopFeature = () => {
         {features.map((feature, featureIndex) => (
           <div
             key={feature.name}
-            className="relative rounded-2xl transition-colors hover:bg-gray-800/30"
+            className="relative rounded-2xl transition-colors hover:bg-gray-600/30"
           >
             {featureIndex === selectedIndex && (
               <motion.div
                 layoutId="activeBackground"
-                className="absolute inset-0 bg-gray-800"
+                className="absolute inset-0 bg-zinc-600"
                 initial={{ borderRadius: 16 }}
               />
             )}
@@ -68,7 +68,7 @@ const DesktopFeature = () => {
       </Tab.List>
       <div className="relative col-span-6">
         <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2">
-          <CircleBackground color="#2563eb" className="animate-spin-slower" />
+          <CircleBackground color="#e11d48" className="animate-spin-slower" />
         </div>
         <PhoneFrame className="z-10 mx-auto w-full max-w-[366px]">
           <Tab.Panels as={Fragment}>
